@@ -1,0 +1,126 @@
+Operadores lógicos
+
+
+Seguindo no conhecimento do JS agora vamos falar conhecer os operadores lógicos. Estes são responsáveis por operações lógicas com operandos bool:
+
+Operador unário ! (negação lógica);
+Operadores &&  e ||. Esses operadores avaliam o operando à direita apenas se for necessário.
+
+O Primeiro operador que utilizamos muito é o operador unário !.
+
+// Somente declaração de variáveis:
+1 const temperatura;
+2 let resultado2Trimestre;
+
+
+Variáveis e Constantes
+
+
+Agora que já sabemos os tipos, como seria a padronização de nome de variáveis e constantes no JavaScript
+
+// Declaração já inicializando valor da variável/Atributo:
+1 let primeiraLetra = ‘A’;
+2 let idade = 18;
+3 let concluido = false;
+
+
+Variáveis e Constantes
+
+
+Agora que já sabemos os tipos, como seria a padronização de nome de variáveis e constantes no JavaScript
+
+// Operador unário, serve para inverter o valor de um boolena a fim de facilitar a verificação
+1 const valido = false; 
+2 console.log(!valido); // resultado: true console.log(!true); // resultado: false
+3 console.log(!!valido); // resultado: false
+
+
+O Próximo operador que utilizamos muito é o operador && (AND). O resultado de x && y será true se ambos x e y forem avaliados como true. Caso contrário, o resultado será false. Se x for avaliado como false, y não será avaliado.
+
+
+// Operador  lógico && ,checa a primeira condição se ela for false, nem avalia a segunda, só será true se ambas forem true
+1 function segundoOperador() { 
+2     console.log(”avaliando segundo operador."); 
+3     return true; 
+4 } 
+5
+6 const a = false && segundoOperador();
+7 console.log(a); // resultado: False
+8 const b = true && segundoOperador(); 
+9 console.log(b); // resultado: Avaliando segundo operador. True
+
+
+O Próximo operador que utilizamos muito é o operador || (OR). O resultado de x && y será true se um dos dois x ou y forem avaliados como true.  Se x for avaliado como true, y não será avaliado.
+
+
+// Operador lógico ||, checa a primeira condição se ela for true, nem avalia a segunda, será true se uma das duas forem true
+1 function segundoOperador() { 
+2    console.log(”avaliando segundo operador."); 
+3    return true; 
+4 } 
+5
+6 const a = false || segundoOperador();
+7 console.log(a); // resultado: True
+8 const b = true || segundoOperador(); 
+9 console.log(b); // resultado: Avaliando segundo operador. True
+10 const c = !b || !a; 
+11 console.log(c); // resultado: Avaliando a negação de a e b. False
+
+      
+Estrutura de seleção
+
+
+Nosso próximo termo do JS agora vamos falar conhecer os Estrutura de seleção. Estes são responsáveis por separerem no código algumas seleções de instruções que só serão executadas quando a condição que os envolver for alcançada:
+
+if (verificador de condição);
+switch (verificador de casos).
+
+// if - verifica se a condição inteira passada entre parênteses é verdadeira, se sim, executa o trecho , senão verifica se foi definido uma clausula else e a execut
+1 const valido = false; 
+2 If (valido) {
+3      console.log(valido); // resultado: True 
+4 } else {
+5 console.log(valido); // resultado: False
+6 }
+
+// elseif – executada se o if falha, verifica se a condição inteira passada entre parênteses é verdadeira, se sim, executa o trecho?
+1 const valido = false; 
+2 const invalido = true; 
+3
+4 If (valido) {
+5    console.log(“Valido”); 
+6 } else if (invalido) {
+7 console.log(“Invalido”); 
+8 }
+
+
+// switch - verifica se algum dos casos informados é verdadeiro, caso seja executa o trecho de código isolado, caso nenhum caso seja atendido executa o trecho  default
+1 const nome = “Douglas”; 
+2
+3 switch(nome)  {
+4 case “João”:
+5   console.log(“João encontrado”); 
+6 break;
+7      case “Douglas”:
+8          console.log(“Douglas encontrado”);
+9           break;
+10        default:
+11           console.log(“Nenhum encontrado”);
+12 }?
+
+Operadores e Estrutura de seleção
+
+
+Agora que já entendemos como funcionam os operadores lógicos e estrutura de seleção. Nesse exercícios vamos exercitar algumas coisas:
+
+Criar um novo programa;
+Capturar as informações passadas na linha de comando;
+Aprender a utilizar a depuração do VS Code;
+Retornar para o usuário o resultado de acordo com a informação passada por ele.
+
+Desafio:
+
+Escrever um programa que recebe o nome e a idade e de acordo com uma lista de convidados validar se a pessoa está na lista e é maior de idade e retornar a mensagem de acordo com as validações feitas.
+
+
+Não se esqueça de commitar? os programas desenvolvidos no seu Git =D
